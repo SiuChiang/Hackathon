@@ -1,0 +1,7 @@
+import os
+from clarifai_basic import ClarifaiCustomModel
+concept = ClarifaiCustomModel()
+path = 'C:\\hackathon\\python\\resource\\heavyMetal';
+for pos_dir_entry in os.listdir(path):
+    pos_dir_entry = os.paht.join(path,pos_dir_entry)
+    concept.postive(pos_dir_entry,'Heavy Metal')

@@ -1,0 +1,2 @@
+from clarifai_basic import ClarifaiCustomModel
+concept = ClarifaiCustomModel()

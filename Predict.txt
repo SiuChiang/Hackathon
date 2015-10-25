@@ -1,0 +1,24 @@
+import sys
+from clarifai_basic import ClarifaiCustomModel
+concept = ClarifaiCustomModel()
+#filename = sys.argv[1]
+tagArray = ['HeavyMetal','Rap', 'Alternative','Pop','Country','Classical','Electronic']
+
+file = open('Output.txt','r+')
+f.write('{url, genre, HeavyMetal, Rap, Alternative, Pop, Country, Classical, Electronic}')
+"""
+with open(filename) as f:
+    for line in f:
+        line = liner.rstrip()
+"""
+"""        
+for genre in tagArray:
+    #print genre
+    result = concept.predict(url,genre)
+    confidence = float(result['urls'][0]['score'])
+    #if confidence > max:
+        #max = confidence
+        #prediction = genre
+    print genre, 'Confidence rate: ', confidence
+#print prediction
+"""

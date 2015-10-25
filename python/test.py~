@@ -1,0 +1,4 @@
+from clarifai import ClarifaiApi
+clarifai_api = ClarifaiApi()
+result = clarifai_api.tag_image_urls('http://www.clarifai.com/img/metro-north.jpg')
+print result
